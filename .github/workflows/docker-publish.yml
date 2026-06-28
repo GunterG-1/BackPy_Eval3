@@ -1,5 +1,6 @@
 name: Publicar imagen docker
 
+
 on:
   push:
     branches:
@@ -24,5 +25,4 @@ jobs:
         with:
           context: .
           push: true
-         
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/ms.backpy.products:latest
